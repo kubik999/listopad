@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    
+    
+    <style>
+        
+    #map {
+        height: 500px;
+        width: 700px;
+        border: 3px solid black;
+    }
+
+    #mapy{
+        display: block;
+        margin-top: 100px; 
+        margin-left: 100px;
+        margin-bottom: 100px;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+        #kontakt{
+            display: flex;
+
+        }
+        
+        #form{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            background-color: rgba(39, 18, 203, 0.57);
+            margin-top: 100px; 
+            margin-left: 100px;
+            margin-bottom: 100px;
+            min-width: 500px;
+
+
+        }
+        
+        #form input{
+            max-width: 250px;
+            box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.75);
+            margin-left: 35px;
+            background-color: rgba(152, 62, 163, 0.37);
+            margin-bottom: 10px;
+            
+        }
+        
+        #form placeholder{
+            color: white;
+        }
+        
+        #form button{
+            max-width: 200px;
+        }
+        
+         #form textarea{
+            margin-left: 60px;
+            margin-right: 60px
+            background-color: rgba(152, 62, 163, 0.37);
+        }
+        
+        #form label{
+            font-family: Georgia;
+            margin-left: 25px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+<div id="wrapper">
+   <div class="logo"> GalaxyGlass <br/> <span> &nbsp; &nbsp;- usługi szklarskie - </span></div>
+   <nav id="nav">
+    <ul>
+        <li><a href="#">Start</a></li>
+        <li><a href="#">O mnie</a></li>
+        <li><a href="#">Aktualności</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Usługi szklarskie</a>
+            <ul>
+                <li><a href="#">Lustra</a></li>
+                <li><a href="#">Kabiny prysznicowe</a></li>
+                <li><a href="#">Systemy kabin prysznicowych</a></li>
+                <li><a href="#">Okladziny szklane, lacobel</a></li>
+                <li><a href="#">Panele szklane z grafiką</a></li>
+                <li><a href="#">Balustrady szklane</a></li>
+                <li><a href="#">Drzwi i zabudowy szklane</a></li>
+                <li><a href="#">Gabloty szklane</a></li>
+                <li><a href="#">Inne (wymiana szyb)</a></li>
+            </ul>
+        </li>        
+        <li><a href="#">Kontakt</a></li>
+    </ul>
+    </nav>
+    
+    <div id="kontakt">
+        <div id="mapy">
+            <h3>Mapa dojazdu:</h3> <div id="map"></div>
+        </div>
+
+        <div id="form" >
+            <label for="">Imię:</label>
+            <input type="text" name="nazwa" placeholder="Imię" />
+            
+            <label for="">Nazwisko:</label>
+            <input type="text" name="nazwa" placeholder="Nazwisko" />
+            
+            <label for="">E-mail:</label>
+            <input type="email" name="nazwa" placeholder="email" />
+            
+            <label for="">Treść:</label>
+            <textarea class="textarea" type="textarea" rows="5" name="nazwa" placeholder="Treść wiadomości..." ></textarea>
+            
+            <button>Wyślij</button>
+            
+        </div>
+    </div>
+    
+    <footer id="footer">
+        <span class="copyright">Copyright © Galaxy Glass 2017</span>
+     </footer>
+     
+     <div class="social-media">
+         <div class="fa1"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+         <div class="fa1"><i class="fa fa-facebook-official" aria-hidden="true"></i></div>
+         <div class="fa1"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+     </div>
+ 
+ 
+</div>
+
+
+<script>	
+      function initMap() {
+        var uluru = {lat: 52.225333, lng:  21.019154};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>	
+	
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBecyC_LYfo2Uo1GDB-RwKpyrBU5MYYgVc&callback=initMap">
+    </script>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+</body>
+
+</html>

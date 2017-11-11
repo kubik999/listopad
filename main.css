@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("tlo.jpg");
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#wrapper{
+    
+}
+.logo{
+    font-family: 'Arizonia', cursive;
+    font-size: 62px;
+    font-weight:  700;
+    margin-left: 25px;
+    line-height: 45px;
+    margin-top: 32px;
+}
+
+.logo span{
+     font-size: 34px;
+
+}
+#nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#nav ul{
+    top: 0;
+    right: 0;
+    width:100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li{
+    float: left;
+    min-height: 45px;
+    width: 120px;
+    background-color: black;
+    opacity: 0.9;
+    font-size: 8px;
+    text-align: center;
+    font-size: 20px; 
+    display: block;
+    line-height: 45px;
+    font-size: 16px;
+
+}
+
+#nav ul li:hover{
+    background-color: #5b45d1;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#nav ul li ul li{
+    display: none; 
+    transition: all 0.25s ease-in-out;
+    min-width: 220px;
+    font-size: 16px;
+    z-index: 9999;
+
+
+}
+
+#nav ul li ul li:hover{
+    transform: translate(8px);
+}
+
+#nav ul li:hover ul li{
+    display: block;
+}
+
+#footer{
+    width: 100%;
+    opacity: 1;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(47, 45, 45, 0.37);
+
+
+    
+}
+#footer span{
+    font-weight: 900;
+    font-size: 18px;
+}
+#footer em{
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.copyright{
+    font-weight: 900;
+    font-size: 20px;
+    opacity: 1;
+    color: black;
+}
+
+#information{
+    display: flex;
+    font-size: 16px;
+    background-color: black;
+    opacity: 0.8;
+}
+
+
+#information p {
+    width: 450px;
+    opacity: 1;
+    color: white;
+    margin-left: 50px;
+    font-weight: 300;
+    font-family: Calibri;
+}
+
+#information p span{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial;
+}
+
+#content{
+    margin: auto;
+    margin-top: 190px;
+    min-height: 320px;
+    width: 1110px;
+    overflow: hidden;
+
+}
+
+#slider{
+    display: flex;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    width:100%;
+   
+}
+
+
+
+#slider img{
+    height: 250px;
+    width: 185px;
+    box-sizing: border-box;
+    border: 3px solid silver;
+}
+
+#slider img:hover{
+
+    border: 3px solid #5b45d1;
+
+}
+
+.fa.fa-map-marker{
+    font-size: 18px;
+}
+
+[data-title]{
+    position: relative;
+}
+
+[data-title]:hover::after{
+    content: attr(data-title);
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    background: #444;
+    color: white;
+    padding: 8px;
+    font-size: 14px; 
+    border 3px solid black;
+}
+
+.social-media{
+    background-color: black;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    font-size: 32px; 
+    transition: all 0.2s linear;
+}
+
+.fa1{
+    transition: all 0.2s linear;
+    background-color: black;
+
+    color: white;
+
+}
+
+
+.fa1:hover{   
+   transform: translateX(12px);
+   transition: all 0.2s linear;
+}
+
+#mapy h3{
+    font-weight: 700;
+    font-family: Arial;
+    margin-left: 120px;
+}
+
+#right{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    right: 110px;
+}
+
+#left{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    left: 110px;
+}
+
